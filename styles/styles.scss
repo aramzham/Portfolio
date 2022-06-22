@@ -378,7 +378,8 @@ header {
     position: relative;
     padding-left: 3rem;
     border-left: 1px solid var(--color-grey-5);
-    .tl-icon{
+
+    .tl-icon {
       position: absolute;
       left: -27px;
       top: 0;
@@ -389,11 +390,13 @@ header {
       align-items: center;
       justify-content: center;
       display: flex;
-      i{
+
+      i {
         font-size: 1.3rem;
       }
     }
-    .tl-duration{
+
+    .tl-duration {
       padding: .2rem .6rem;
       background-color: var(--color-grey-5);
       border-radius: 15px;
@@ -402,44 +405,50 @@ header {
       text-transform: uppercase;
       font-weight: 500;
     }
-    h5{
+
+    h5 {
       padding: 1rem 0;
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
-      span{
+
+      span {
         color: var(--color-grey-2);
         font-weight: 500;
         font-size: 1.2rem;
       }
     }
-    p{
-      color:var(--color-grey-2);
+
+    p {
+      color: var(--color-grey-2);
     }
   }
 }
 
 // portfolios
-.port-text{
+.port-text {
   padding: 2rem 0;
   text-align: center;
 }
 
-.portfolios{
+.portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
-  .portfolio-item{
+
+  .portfolio-item {
     position: relative;
     border-radius: 15px;
-    img{
+
+    img {
       width: 100%;
       height: 300px;
       object-fit: cover;
       border-radius: 15px;
     }
-    .hover-items{
+
+    .hover-items {
       width: 100%;
       height: 100%;
       background-color: var(--color-secondary);
@@ -454,16 +463,19 @@ header {
       opacity: 0;
       transform: scale(0);
       transition: all .4s ease-in-out;
-      h3{
+
+      h3 {
         font-size: 1.5rem;
-        color:var(--color-white);
+        color: var(--color-white);
         margin-bottom: 1.5rem;
       }
-      .icons{
+
+      .icons {
         display: flex;
         justify-content: center;
         align-items: center;
-        .icon{
+
+        .icon {
           background-color: var(--color-primary);
           border-radius: 50%;
           width: 50px;
@@ -474,15 +486,18 @@ header {
           margin: 0 1rem;
           cursor: pointer;
           transition: all .4s ease-in-out;
-          i{
+
+          i {
             font-size: 1.5rem;
             color: var(--color-white);
             margin: 0 1rem;
           }
-          &:hover{
+
+          &:hover {
             background-color: var(--color-white);
-            i{
-              color:var(--color-primary);
+
+            i {
+              color: var(--color-primary);
             }
           }
         }
@@ -491,9 +506,69 @@ header {
   }
 }
 
-.portfolio-item:hover .hover-items{
+.portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+
+// blogs section
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+
+  .blog {
+    position: relative;
+    background-color: var(--color-grey-5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
+      transform: translateY(-5px);
+      transition: all .4s ease-in-out;
+
+      img {
+        filter: grayscale(0);
+        transform: scale(1, 1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      filter: grayscale(100%);
+      transition: all .4s ease-in-out;
+    }
+
+    .blog-text {
+      margin-top: -7px;
+      padding: 1.1rem;
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: .7rem;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--color-secondary);
+        }
+
+        p {
+          color: var(--color-grey-2);
+          line-height: 2rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
 }
 
 // independent components
