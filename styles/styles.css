@@ -327,23 +327,23 @@ header {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+.about-stats .progress-bars .progress-bar .progress-con .progress .netcore {
   width: 95%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
   width: 75%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 87%;
-}
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 40%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .git {
+  width: 50%;
 }
 
 .stat-title {
