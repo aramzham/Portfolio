@@ -650,6 +650,7 @@ header {
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+  margin: 0 5px;
 }
 .main-btn .btn-txt {
   padding: 0 2rem;
